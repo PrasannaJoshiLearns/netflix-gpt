@@ -1,11 +1,8 @@
 import './index.css';
+import Body from './components/Body';
 
 function App() {
-  return (
-    <div className='text-left'>
-      <h1 className='font-bold text-green-800 text-3xl'>Hello World</h1>
-    </div>
-  );
+  return <Body />;
 }
 
 export default App;
