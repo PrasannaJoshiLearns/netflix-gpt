@@ -9,7 +9,7 @@ import {
 import { auth } from '../utils/firebase';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import { USER_AVATAR } from '../utils/constant';
+import { BG_URL, USER_AVATAR } from '../utils/constant';
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
@@ -104,10 +104,7 @@ const Login = () => {
     <div>
       <Header />
       <div className='absolute'>
-        <img
-          src='https://assets.nflxext.com/ffe/siteui/vlv3/40ed4063-8e1c-4627-8627-137db7aa6d1b/web/IN-en-20250331-TRIFECTA-perspective_c33979e3-aad8-4db2-bbc5-fd7fc12f2d4d_large.jpg'
-          alt='bg-image'
-        />
+        <img src={BG_URL} alt='bg-image' />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
